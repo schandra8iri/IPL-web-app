@@ -136,5 +136,29 @@ created a request and response object
 
 	
 ### Fetch actual teams list and display
+- COpy all java classes 
+- Call teams service to fetch the team records
+
+
+### Format using JSTL the teams data on the page
+
+- add maven dependency 
+
+	<dependency>
+	<groupId>jstl</groupId>
+	<artifactId>jstl</artifactId>
+	<version>1.2</version>
+	</dependency>
+	<dependency>
+	<groupId>taglibs</groupId>
+	<artifactId>standard</artifactId>
+	<version>1.1.2</version>
+	</dependency>
+	
+- import a tag lib 
+
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+	
+
 
 	

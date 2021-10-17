@@ -9,6 +9,12 @@ import in.co.ipl.webapp.utils.Franchaise;
 
 public class Team implements ITeam{
 	
+	@Override
+	public String toString() {
+		return String.format("Team [teamName=%s, totalSix=%s, netRunRate=%s, isKnockOut=%s, players=%s, members=%s]",
+				teamName, totalSix, netRunRate, isKnockOut, players, members);
+	}
+
 	public Franchaise teamName =null;
 	public int totalSix = 0;
 	public double netRunRate = 0.171;
@@ -16,7 +22,7 @@ public class Team implements ITeam{
 	private List<Player> players;
 	private List<Member> members;
 	
-	public List<Member> getStaff() {
+	public List<Member> getMembers() {
 		return members;
 	}
 
