@@ -67,10 +67,28 @@ Create a project with maven archetype webapp
 
 Create java and test folder
 
-Create a servelet class from eclipse
-check the web.xml
-create a servelet manually
+
+### Create first servlet 
+ - Right click on project and generate new servlet class
+ - Call its Default servlet for url /status
+ - Return just 200 response
+ - Added servlet dependeny in pom
+ - check the web.xml
+ 
+### Create first JSP
+
+- Create a JSP file called home.jsp from eclipse
+- Add some title and  run on server
+- Create a  file for error and simply access to from the url path
+
+
 
 Maven tomcat plugin
 
 http://tomcat.apache.org/maven-plugin-2.2/
+
+
+Tomcat facilitates the communication with servelets 
+Creates a new thread for every request
+created a request and response object
+
