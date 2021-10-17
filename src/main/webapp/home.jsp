@@ -9,8 +9,8 @@
 <body>
 <h1>IPL 2021</h1>
 
-<h2>Royal Challengers Bangalore</h2>
-<h2>Chenni Super Kings</h2>
+ <a href="/webapp/team?name=rcb"><h3>Royal Challengers Bangalore</h3></a>
+ <a href="/webapp/team?name=csk"><h3>Chenni Super Kings</h3></a>
 
 
 </body>

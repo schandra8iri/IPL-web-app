@@ -124,4 +124,14 @@ created a request and response object
 
 ### Send and receive parameters 
 
-- Get Parameter from URL
+- Change the teams name as link 
+		 <a href="/team?name=rcb"><h3>Royal Challengers Bangalore</h3></a>
+		 <a href="/team?name=csk"><h3>Chenni Super Kings</h3></a>
+		 
+- Click to get 404, inspect request
+- Write a new servlet for /team
+- Read and log the parameter
+- Create team.jsp, set team attribute, fwd the request to jsp
+- use EL to retrieve the attribute
+
+	
