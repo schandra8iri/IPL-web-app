@@ -2,6 +2,9 @@
 
 A simple web application for IPL
 
+https://www.journaldev.com/2114/servlet-jsp-tutorial
+
+
     mvn archetype:generate -DgroupId=in.co.ipl -DartifactId=webapp -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 
 Maven Cordinates
