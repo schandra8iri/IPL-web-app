@@ -5,6 +5,21 @@ A simple web application for IPL
 https://www.journaldev.com/2114/servlet-jsp-tutorial
 
 
+
+1. Maven
+2. Tomcat
+3. Webserver - web client
+4. HTMP-HTTP
+5. Servlets-JSP
+6. ServletConfig
+7. Servlet context
+8. Servlet Request
+9. Servlet Response
+10.Request Despatcher
+
+
+
+
     mvn archetype:generate -DgroupId=in.co.ipl -DartifactId=webapp -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 
 Maven Cordinates
@@ -92,3 +107,21 @@ Tomcat facilitates the communication with servelets
 Creates a new thread for every request
 created a request and response object
 
+
+
+### Display content 
+
+- Create a jsp components to display Teams
+
+	<h1>IPL 2021</h1>
+	<h2>Royal Challengers Bangalore</h2>
+	<h2>Chenni Super Kings</h2>
+- forward the request to jsp from servlet
+
+			req.getRequestDispatcher("home.jsp").forward(req, resp);
+	
+	
+
+### Send and receive parameters 
+
+- Get Parameter from URL

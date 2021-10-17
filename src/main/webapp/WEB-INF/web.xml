@@ -10,8 +10,18 @@
   	<description></description>
   	<servlet-class>in.co.ipl.webapp.controller.DefaultServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>HomeServlet</servlet-name>
+  	<display-name>HomeServlet</display-name>
+  	<description></description>
+  	<servlet-class>in.co.ipl.webapp.controller.HomeServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>DefaultServlet</servlet-name>
   	<url-pattern>/status</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>HomeServlet</servlet-name>
+  	<url-pattern>/home</url-pattern>
   </servlet-mapping>
 </web-app>
