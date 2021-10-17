@@ -6,6 +6,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import in.co.ipl.webapp.service.TeamService;
+import in.co.ipl.webapp.service.Teams;
+
 /**
  * Servlet implementation class TeamController
  */
@@ -26,8 +29,10 @@ public class TeamController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		
+		Teams teamservice = new Teams();
 		log(request.getParameter("name"));
-		request.setAttribute("team", request.getParameter("name"));
+		request.setAttribute("team", teamservice.getTeam(request.getParameter("name")));
 		request.getRequestDispatcher("/WEB-INF/views/team.jsp").forward(request, response);
 	}
 

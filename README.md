@@ -135,3 +135,6 @@ created a request and response object
 - use EL to retrieve the attribute
 
 	
+### Fetch actual teams list and display
+
+	
